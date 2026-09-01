@@ -61,7 +61,7 @@ const Hero = () => {
                     </div>
 
                     {/* Trust badges */}
-                    <div className="mt-12 flex items-center gap-6 text-xs text-[#c9a959]/60 tracking-widest font-light uppercase">
+                    {/* <div className="mt-12 flex items-center gap-6 text-xs text-[#c9a959]/60 tracking-widest font-light uppercase">
                         <span className="flex items-center gap-1.5">
                             <span className="inline-block w-1.5 h-1.5 rounded-full bg-emerald-400/70 animate-pulse"></span>
                             100% Homemade
@@ -70,7 +70,7 @@ const Hero = () => {
                         <span>Est. 2026</span>
                         <span className="w-px h-4 bg-[#2a1f1a]"></span>
                         <span>Fresh Daily</span>
-                    </div>
+                    </div> */}
                 </div>
             </div>
 

@@ -125,15 +125,17 @@ const Menu = () => {
                                 .map((item) => (
                                     <div
                                         key={item.id}
-                                        className="group flex flex-row sm:flex-col bg-white border border-[#e8e0d8] rounded-lg overflow-hidden hover:border-[#c9a959] transition-all duration-300 hover:shadow-xl hover:shadow-[#c9a959]/10"
+                                        className="group flex flex-row sm:flex-col items-stretch bg-white border border-[#e8e0d8] rounded-lg overflow-hidden hover:border-[#c9a959] transition-all duration-300 hover:shadow-xl hover:shadow-[#c9a959]/10"
                                     >
-                                        <div className="w-24 h-24 sm:w-full sm:h-48 flex-shrink-0 overflow-hidden bg-[#e8e0d8]">
+                                        {/* Image container – now stretches to full height on mobile */}
+                                        <div className="w-24 sm:w-full sm:h-48 flex-shrink-0 overflow-hidden bg-[#e8e0d8] self-stretch">
                                             <img
                                                 src={item.image}
                                                 alt={item.name}
                                                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                                             />
                                         </div>
+                                        {/* Text & button */}
                                         <div className="flex-1 p-3 sm:p-5 flex flex-col justify-center sm:justify-start">
                                             <h4 className="text-sm sm:text-lg font-serif font-light tracking-wider text-[#1a0f0a] group-hover:text-[#c9a959] transition-colors">
                                                 {item.name}
