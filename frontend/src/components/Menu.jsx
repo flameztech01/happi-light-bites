@@ -4,87 +4,80 @@ import { Coffee, Cookie, Cake, ShoppingBag } from 'lucide-react';
 const Menu = () => {
     const menuItems = [
         {
-            id: 1,
-            name: 'Peanut',
-            description: 'Crunchy roasted peanuts with a hint of sea salt.',
-            image: 'https://images.unsplash.com/photo-1599599810769-bcde5a160d32?w=600&q=80',
-            category: 'Snacks'
-        },
-        {
             id: 2,
             name: 'Chin Chin',
             description: 'Crispy fried dough bites, lightly sweetened.',
-            image: 'https://images.unsplash.com/photo-1624353070502-9c8bd4f58f20?w=600&q=80',
+            image: 'chinchin.png',
             category: 'Snacks'
         },
         {
             id: 3,
             name: 'Zobo',
             description: 'Refreshing hibiscus drink with ginger and pineapple.',
-            image: 'https://images.unsplash.com/photo-1596029224908-0abb23f1e4a4?w=600&q=80',
+            image: 'zobo.png',
             category: 'Drinks'
         },
         {
             id: 4,
             name: 'Fish Roll',
             description: 'Flaky pastry filled with spiced mackerel and vegetables.',
-            image: 'https://images.unsplash.com/photo-1578916171728-46686eac8d58?w=600&q=80',
+            image: 'fishroll.png',
             category: 'Pastries'
         },
         {
             id: 5,
             name: 'Meat Pie',
             description: 'Savory pie with minced beef, carrots, and herbs.',
-            image: 'https://images.unsplash.com/photo-1547573854-74d2a71d0826?w=600&q=80',
+            image: 'meatpie.png',
             category: 'Pastries'
         },
         {
             id: 6,
             name: 'Egg Roll',
             description: 'Golden fried spring roll with seasoned egg and vegetables.',
-            image: 'https://images.unsplash.com/photo-1585032226651-759b368d7246?w=600&q=80',
+            image: 'eggroll.png',
             category: 'Snacks'
         },
         {
             id: 7,
             name: 'Parfait',
             description: 'Layered yogurt with granola and fresh berries.',
-            image: 'https://images.unsplash.com/photo-1488477181946-6428a0291779?w=600&q=80',
+            image: 'parfait.png',
             category: 'Desserts'
         },
         {
             id: 8,
             name: 'Cake Parfait',
             description: 'Decadent layered cake with cream and fruit compote.',
-            image: 'https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=600&q=80',
+            image: 'cakeparfait.png',
             category: 'Desserts'
         },
         {
             id: 9,
             name: 'Condensed Milk Toffee',
             description: 'Chewy toffee made with sweetened condensed milk.',
-            image: 'https://images.unsplash.com/photo-1581798459210-107e01f2bda1?w=600&q=80',
+            image: 'condensedmilktoffee.png',
             category: 'Sweets'
         },
         {
             id: 10,
             name: 'Tigernut Milk',
             description: 'Creamy plant-based milk with a nutty flavour.',
-            image: 'https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=600&q=80',
+            image: 'tigernutmilk.png',
             category: 'Drinks'
         },
         {
             id: 11,
             name: 'Chops',
             description: 'Assorted fried delicacies – plantain, yam, and more.',
-            image: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&q=80',
+            image: 'chops.png',
             category: 'Snacks'
         },
         {
             id: 12,
             name: 'Peanut Burger',
             description: 'Peanut-based protein bites, seasoned and roasted.',
-            image: 'https://images.unsplash.com/photo-1599599810769-bcde5a160d32?w=600&q=80',
+            image: 'peanut.png',
             category: 'Snacks'
         },
     ];
@@ -127,10 +120,10 @@ const Menu = () => {
                                         key={item.id}
                                         className="group flex flex-row sm:flex-col items-stretch bg-white border border-[#e8e0d8] rounded-lg overflow-hidden hover:border-[#c9a959] transition-all duration-300 hover:shadow-xl hover:shadow-[#c9a959]/10"
                                     >
-                                        {/* Image container – now stretches to full height on mobile */}
+                                        {/* Image container */}
                                         <div className="w-24 sm:w-full sm:h-48 flex-shrink-0 overflow-hidden bg-[#e8e0d8] self-stretch">
                                             <img
-                                                src={item.image}
+                                                src={`/${item.image}`} // directly from public root
                                                 alt={item.name}
                                                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                                             />
